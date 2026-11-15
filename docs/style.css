@@ -70,8 +70,29 @@ select { background: var(--card); color: var(--ink); border: 1px solid var(--lin
 .guide { margin: 0 0 38px; padding: 24px; border-radius: 17px; color: #fff5e6; background: var(--brown); }
 .guide .eyebrow { margin-bottom: 8px; }
 .guide p:last-child { margin: 0; }
-footer { border-top: 1px solid var(--line); padding-block: 19px; color: var(--muted); font-size: 12px; letter-spacing: .11em; }
+.footer-guide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: center;
+  gap: 16px 30px;
+  border-radius: 17px;
+  padding: 27px 28px;
+  background: #f2e5d3;
+}
+.footer-guide .eyebrow { margin-bottom: 9px; color: #79583e; }
+.footer-guide h2 { margin: 0; }
+.footer-guide-copy { color: #795438; }
+.footer-guide-copy p { margin: 0; }
+.footer-guide-copy p + p { margin-top: 11px; }
+.footer-meta {
+  border-top: 1px solid var(--line);
+  padding-block: 19px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: .11em;
+}
 @media (max-width: 650px) {
+  .footer-guide { grid-template-columns: 1fr; padding: 20px 17px; }
   .wrap, .nav-inner { width: calc(100% - 32px); }
   .masthead-inner { min-height: 60px; }
   .masthead a { font-size: 16px; }
