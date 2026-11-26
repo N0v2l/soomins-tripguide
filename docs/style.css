@@ -161,3 +161,7 @@ select { background: var(--card); color: var(--ink); border: 1px solid var(--lin
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+/* DAY 02 카드 전체 너비 사용 */
+.schedule-wide {
+  grid-column: 1 / -1;
+}
