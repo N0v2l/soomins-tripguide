@@ -182,3 +182,13 @@ select { background: var(--card); color: var(--ink); border: 1px solid var(--lin
   transform: rotate(-2deg);
   transform-origin: left center;
 }
+/* 1일차 식사 안내 버튼 간격 */
+#meal-1 > details {
+  display: block;
+  margin-top: 14px;
+}
+
+/* 설명과 첫 번째 버튼 사이 여백 */
+#meal-1 > details:first-of-type {
+  margin-top: 22px;
+}
