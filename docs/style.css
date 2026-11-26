@@ -165,3 +165,20 @@ select { background: var(--card); color: var(--ink); border: 1px solid var(--lin
 .schedule-wide {
   grid-column: 1 / -1;
 }
+/* 메인 타이틀 - 캐주얼하고 통통한 글씨체 */
+.hero h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(48px, 7vw, 82px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+/* Just Vibes에 살짝 장난스러운 기울기 */
+.hero h1 em {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  transform: rotate(-2deg);
+  transform-origin: left center;
+}
